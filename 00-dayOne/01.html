@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="01.css">
+    <!-- <style> 
+        body {
+            background-color: lightgray;
+            padding: 1em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        #mainTitle {
+            text-align: center;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Emmet shortcuts: type "h1#" to bring up auto-fill shortcut -->
+    <!-- Typing "h1#mainTitle" will auto-fill with CSS id mainTitle -->
+    <h1 id="mainTitle">First Day Notes</h1> 
+    <h2>NOTES</h2>
+
+    <!-- Emmet shortcut ul.notes#list populates HTML tags with CSS calls to class and id -->
+    <ul class="notes" id="list">
+        <li class="list-items">When using Emmet, class is denoted by a "." and id is denoted by "#"</li>
+        <!-- use 'option/alt + shift + down arrow' to quickly add a copy of the line you are on -->
+        <li class="list-items">HTML stands for hypertext markup language</li>
+        <li class="list-items">DOCTYPE states the type of document, in this case HTML</li>
+        <!-- use li.list-items*(any number) to quickly insert x number of entries with same tags-->
+        <!-- li.list-items*8 -->
+        <li class="list-items">our html tag denotes our language to be english, per the lang="en"</li>
+        <li class="list-items">The head tag houses metadata, or detailed data about our doc.</li>
+        <li class="list-items">UTF-8 specifice character encoding. Each character (letter, number, even spaces) has a numberic value.</li>
+        <li class="list-items">viewport notes the device we are reading our document on.</li>
+        <li class="list-items">title reflects the name that displays on our browser tab.</li>
+        <li class="list-items">link allows us to connect to other files, such as our stylesheet (CSS)</li>
+        <li class="list-items">A style tag can help us inject css into our document, but this is not best practice.</li>
+        <li class="list-items">The body tag houses all the other tags that we want to display onto our browser. This will be what the user sees!</li>
+    </ul>
+    <!-- "command + /" (mac) or "ctrl + /" will auto insert a comment tag -->
+    <hr>
+    <div class="wrapper">
+        <h1 id="divh1">Two Truths and a Lie</h1>
+        <div class="div1"><h3 id="h3style">Been to Alaska</h3>
+        <p id="description">When I was in the Army, I went to Alaska for training.</p></div>
+        <div class="div2"><h3 id="h3style">Never seen Shawshank Redemption</h3>
+        <p id="description">I have seen a lot of movies, but never Shawshank Redemption.</p></div>
+        <div class="div3"><h3 id="h3style">Birthday in May</h3>
+        <p id="description">There are many months to be born in, some may even say there are 12. I was born in May.</p></div>
+    </div>
+    <br><hr><br>
+<!-- 
+    Bronze:
+    - Make an h2 tag saying 'Movies!'
+    - Make a TABLE with a HEADER
+    - In the header, have 4 columns with the headers reading: 'Movie Title', 'Year', 'Runtime', and 'Rating'
+    - Add at least 3 movies (you can make the info up)
+
+    Silver:
+    Using CSS:
+    - Add a BACKGROUND COLOR of LIGHT SKY BLUE
+    - Put a BORDER around the table that is BLACK
+
+    Gold:
+    - Italicize the movie titles
+    - Set the table in the center
+-->
+    <div class="movdiv"><h2>Movies!</h2>
+<table>
+    <tr>
+        <th>Movie Title</th>
+        <th>Year</th>
+        <th>Runtime</th>
+        <th>Rating</th>
+    </tr>
+    <tr>
+        <td class="movtitle">The Departed</td>
+        <td>2006</td>
+        <td>2h 31m</td>
+        <td>5/5</td>
+    </tr>
+    <tr>
+        <td class="movtitle">The Lion King</td>
+        <td>1994</td>
+        <td>1hr 28m</td>
+        <td>5/5</td>
+    </tr>
+    <tr>
+        <td class="movtitle">Wizard of Oz</td>
+        <td>1939</td>
+        <td>1h 42m</td>
+        <td>5/5</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
