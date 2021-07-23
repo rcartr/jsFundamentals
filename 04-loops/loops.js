@@ -178,7 +178,7 @@ for (worker of officeCharacters) {
         console.log(worker, 'works too much in the office.')
     }
     if (worker === 'Jim' && worker !== 'Dwight'){
-        console.log('Bear. Beets. Battlestar Gallactica.')
+        console.log('Bears. Beets. Battlestar Gallactica.')
     }
 }
 
