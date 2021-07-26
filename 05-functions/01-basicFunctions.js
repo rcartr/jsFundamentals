@@ -123,3 +123,13 @@ function greeting(first, last) {
 }
 
 greeting('Richard', 'Carter');
+
+// after
+
+function foo() {
+    return bar();
+    function bar() {
+        return "Poppin bottles!";
+    }
+}
+console.log(foo());

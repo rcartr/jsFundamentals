@@ -18,7 +18,7 @@
 */
 
 // Lets count to 10
-for (let i = 0; i <= 10; i++){
+for (let i = 0; i < 5; i++){
     console.log(i);
 }
 
@@ -54,7 +54,7 @@ for (let i = 0; i <= 10; i++){
     Using a FOR loop, set an index to 2. Make a condition where if that number is greater than -10, change that index by subtracting 4 and console log each iteration.
 */
 
-for (let x = 2; x > -10; x -= 4) {
+for (let x = 2; x > -10; x -= 2) {
     console.log(x);
 }
 
@@ -182,3 +182,32 @@ for (worker of officeCharacters) {
     }
 }
 
+// after
+
+let count = 0;
+for ( ; count < 9 ; ++count) {
+    console.log(count);
+}
+
+/*
+    CHALLENGE!
+
+    Write a for loop that counts from 1 to 100
+        -for numbers that are evenly divisible by 3, print 'FIZZ'
+        -for numbers that are evenly divisible by 5, print 'BUZZ'
+        -for numbers that are evenly divisible by 3 & 5, print 'FIZZ BUZZ'
+    
+    Reminder: a number is evenly divisible by another number when the remainder is 0
+*/
+
+for (let x = 1; x < 101; x++){
+    if (x % 15 == 0) {
+        console.log('FIZZ BUZZ');
+    } else if (x % 3 == 0) {
+        console.log('FIZZ');
+    } else if (x % 5 == 0) {
+        console.log('BUZZ');
+    } else {
+        console.log(x)
+    }
+}
