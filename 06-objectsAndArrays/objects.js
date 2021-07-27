@@ -64,7 +64,7 @@ console.log(baking[garden['vegetable']]);
 // Using square brackets can also be a good idea if the object's key has a space in the name
 
 let testObj = {
-    "Spaces Here": true
+    "Spaces Here": true,
     noSpaces: true
 }
 console.log(testObj.noSpaces);

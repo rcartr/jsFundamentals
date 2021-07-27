@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM Manipulation</title>
+</head>
+<body>
+    <!-- 
+        DOM is short for Document Object Model 
+        It is what allows JS to interact with our HTML and CSS. The DOM specifies how a browser should create a model of an HTML page and how JS can access and update the contents of a web page while it is in the browser's window.
+
+        DOM is an object representation of a web page, which can be modified with a scripting language like JavaScript.
+
+        Two primary functions:
+        1. Making a model of an HTML page
+            - When the browser loads a webpage, it creates a model of the page in memory.
+            - The DOM specifies the way in which a browser should structure the model in what is called the DOM tree. The DOM is called an object model because the DOM tree is made of objects.
+        2. Accessing and changing the HTML page
+            - The DOM also provides methods and properties to access and update each object in the model, which in turn updates what the user sees in the browser.
+
+        Usually when working with DOM, we will access an element we want to work with and then we will modify or manipulate it.
+
+        ACCESSING:
+            Common methods for accessing a single element:
+            - getElementByID()
+            - querySelector()
+
+            Common methods for accessing multiple elements:
+            - querySelectorAll()
+            - getElementByClassName()
+            - getElementByTagName()
+        
+        MANIPULATING:
+            Common methods for working with HTML content:
+            - innerHTML (a property)
+            - textContent
+            - createElement
+
+            Common methods for working with tab attributes:
+            - className / id
+            - setAttribute()
+            - getAttribute()
+    -->
+    
+    <!-- 1 -->
+    <p id="testParagraph">Sample text</p>
+
+    <!-- 2 -->
+    <!-- p.samepleClass*4 -->
+    <p class="sampleClass">A class paragraph</p>
+    <p class="sampleClass">A class paragraph</p>
+    <p class="sampleClass">A class paragraph</p>
+    <p class="sampleClass">A class paragraph</p>
+    <h2 class="sampleClass">An h2 example</h2>
+    <br><hr>
+
+    <span id="spanTest">Hello <span style="display: none">World!</span></span>
+    <br><hr><br>
+    
+    <!-- 3 -->
+    <button id="clickThis">Click This!</button>
+    <br><hr><br>
+
+    <!-- 4 -->
+<label for="nameInput">Enter your name:</label><br>
+<input type="text" id="nameInput" placeholder="Your Name Here" />
+
+    <!-- 
+        We can write JS directly in our HTML using the <script> tag
+            Similar to how we can write CSS in out HTML using <style> tag
+            -->
+            <script>
+                //  now we can write some JS
+                console.log('Hello from the script tag!')
+                </script>
+        <!-- To link an external JS file, we still use the <script> tag, but specifiy a source -->
+            <script src="script.js"></script>
+        
+</body>
+</html>
