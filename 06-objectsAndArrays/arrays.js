@@ -79,7 +79,7 @@ let colors = ['blue','green','yellow','red','orange','purple'];
     forEach - 
 
     -the forEach() method executes a provided function once for each  element in an array
-    -the forEach() method does the same thing as a FOR look or FORE OF loop --> both iterate over the properties in an array
+    -the forEach() method does the same thing as a FOR look or FOR OF loop --> both iterate over the properties in an array
 
     -provide a callback function that has up to 3 arguments
         1. the value

@@ -22,3 +22,45 @@ function findPerimeter(length,width) {
     }
 }
 findPerimeter(7,5)
+
+// Replit challenge 1: even or odd, conditionals and loops
+let callback = (num) => {
+    return isNaN(num) ? console.log('what is this?') : num % 2 == 0 || num == 0 ? console.log(`${num} the number is even`) : console.log(`${num} the number is odd`);
+}
+callback('17')
+
+
+// loop method for Repl 1
+// for (var num=0; num<=10; num++) {
+//     if (num == 0) {
+//         console.log(num, "the number is even");
+//     } else if (num % 2 == 0) {
+//         console.log(num, "the number is even");   
+//     } else if (num % 2 != 0) {
+//         console.log(num, "the number is odd");
+//     } else {
+//         console.log('what is this?');
+//     }
+// }
+for (var num=0; num<=10; num++) {
+    callback(num);
+}
+
+// Replit challenge 2: object literal
+const movieChallenge = {
+    name: 'The Departed',
+    runTime: 151,
+    genre: 'crime thriller',
+    characters: {
+        name1: 'Billy Costigan, Jr.',
+        age1: 30,
+        items1: ['shirt', 'badge', 'gun'],
+        name2: 'Frank Costello',
+        age2: 60,
+        items2: ['sunglasses','cap','gun']
+    }
+}
+
+console.log(movieChallenge.name + ', ' + movieChallenge.genre + ', ' + movieChallenge.runTime)
+console.log(movieChallenge.characters.name1 + ", " + movieChallenge.characters.name2 + ", " + movieChallenge.characters.items2[2])
+

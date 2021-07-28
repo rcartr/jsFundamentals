@@ -44,14 +44,30 @@ console.log(document.getElementById('spanTest').innerText);
 console.log(document.getElementById('spanTest').textContent);
 console.log(document.getElementById('spanTest').innerHTML);
 
-// ! addEventListener()
+// ! addEventListener() - click
 
-document.getElementById('clickThis').addEventListener('click', function(event) {
-    console.log(event.target)
-    event.target.style.backgroundColor = "031bfe"
+/* 
+    CHALLENGE
+
+    Move the button into a variable, and when you click that button it will turn blue, or if it is already blue it will turn red.
+*/
+let clickButton = document.getElementById('clickThis');
+
+clickButton.addEventListener('click', ev => {
+    console.log(clickButton.style.backgroundColor);
+    if(clickButton.style.backgroundColor !== "blue"){
+        clickButton.style.backgroundColor = "blue";
+    } else {
+        clickButton.style.backgroundColor = "red"
+    }
 })
 
-// ! addEventListener - keyup
+// clickButton.addEventListener('click', function(event) {
+//     console.log(event.target)
+//     event.target.style.backgroundColor = "blue"
+// })
+
+// ! addEventListener() - keyup
 let input = document.getElementById('nameInput')
 
 input.addEventListener('keyup', e => {
@@ -59,8 +75,10 @@ input.addEventListener('keyup', e => {
     document.getElementsByTagName('p')[0].innerText = 'Something has changed!'
 
     if(e.target.value == "") {
-        document.getElementsByClassName('p')[1].innerText = "Nothing has been typed...";
+        document.getElementsByTagName('p')[1].innerText = "Nothing has been typed...";
     } else {
-        document.getElementsByClassName('p')[1].innerText = `Everyone say hello to ${e.target.value}`
+        document.getElementsByTagName('p')[1].innerText = `Everyone say hello to ${e.target.value}`
     }
 })
+
+
