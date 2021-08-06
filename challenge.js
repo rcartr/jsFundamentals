@@ -99,3 +99,22 @@ function translate(str) {
 }
 
 translate("paragraphs")
+
+/*
+    REPL CHALLENGE 4: RICK & MORTY API
+*/
+const img1 = document.getElementById('imageOne')
+const img2 = document.getElementById('imageTwo')
+
+const display = (url1,url2) => {
+  img1.src = url1;
+  img2.src = url2;
+}
+
+fetch('https://rickandmortyapi.com/api/character/')
+.then (results => results.json())
+.then (characters => {
+  console.log(characters)
+  display(characters.results[0].image,characters.results[1].image)
+})
+.catch (error => console.log(error))
